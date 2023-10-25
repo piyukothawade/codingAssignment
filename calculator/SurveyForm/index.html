@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <form id="surveyForm">
+        First Name: <input type="text" name="firstname" required><br>
+        Last Name: <input type="text" name="lastname" required><br>
+        DOB: <input type="date" name="dob" required><br>
+        Country: 
+        <select name="country" required>
+            <option value="">Select a country</option>
+            <option value="USA">USA</option>
+            <option value="Canada">Canada</option>
+            <!-- Add other countries as needed -->
+        </select><br>
+        Gender: 
+        <input type="checkbox" name="gender" value="Male"> Male
+        <input type="checkbox" name="gender" value="Female"> Female
+        <!-- Add other genders as needed --><br>
+        Profession: <input type="text" name="profession" required><br>
+        Email: <input type="email" name="email" required><br>
+        Mobile: <input type="tel" name="mobile" required><br>
+        
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>
